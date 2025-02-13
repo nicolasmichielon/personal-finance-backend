@@ -2,6 +2,9 @@
   "name": "api-rest",
   "version": "1.0.0",
   "main": "index.js",
+  "engines": {
+    "node": ">=18.0.0"
+  },
   "scripts": {
     "dev": "tsx watch src/server.ts",
     "knex": "node --import tsx ./node_modules/knex/bin/cli.js",
@@ -13,6 +16,14 @@
   "author": "",
   "license": "ISC",
   "description": "",
+  "dependencies": {
+    "@fastify/cookie": "^11.0.2",
+    "dotenv": "^16.4.7",
+    "fastify": "^5.2.1",
+    "knex": "^3.1.0",
+    "pg": "^8.13.3",
+    "zod": "^3.24.1"
+  },
   "devDependencies": {
     "@rocketseat/eslint-config": "^2.2.2",
     "@types/node": "^22.13.1",
@@ -21,14 +32,7 @@
     "tsup": "^8.3.6",
     "tsx": "^4.19.2",
     "typescript": "^5.7.3",
-    "vitest": "^3.0.5"
-  },
-  "dependencies": {
-    "@fastify/cookie": "^11.0.2",
-    "dotenv": "^16.4.7",
-    "fastify": "^5.2.1",
-    "knex": "^3.1.0",
     "sqlite3": "^5.1.7",
-    "zod": "^3.24.1"
+    "vitest": "^3.0.5"
   }
 }
